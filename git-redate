@@ -205,7 +205,7 @@ if [ "$DRY_RUN" = 1 ]; then
     }
 else
     run() {
-        "$@"
+        FILTER_BRANCH_SQUELCH_WARNING=1 "$@"
     }
 fi
 
